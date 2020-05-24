@@ -3,27 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B10F670555632C219D290CA /* Pods_lampa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6050F9C31FA52441C0AD58A /* Pods_lampa.framework */; };
 		F445913524786F7D00259866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445913424786F7D00259866 /* AppDelegate.swift */; };
 		F445913724786F7D00259866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445913624786F7D00259866 /* SceneDelegate.swift */; };
-		F445913924786F7D00259866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445913824786F7D00259866 /* ViewController.swift */; };
 		F445913C24786F7D00259866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445913A24786F7D00259866 /* Main.storyboard */; };
 		F445913E24786F7F00259866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F445913D24786F7F00259866 /* Assets.xcassets */; };
-		F445914124786F7F00259866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445913F24786F7F00259866 /* LaunchScreen.storyboard */; };
+		F445915024787EEB00259866 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445914F24787EEB00259866 /* ExtensionUIViewController.swift */; };
+		F445916524788B1A00259866 /* SearchViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445915F24788B1A00259866 /* SearchViewControllerPresenter.swift */; };
+		F445916624788B1A00259866 /* SearchViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445916024788B1A00259866 /* SearchViewControllerRouter.swift */; };
+		F445916724788B1A00259866 /* SearchViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445916124788B1A00259866 /* SearchViewControllerViewController.swift */; };
+		F445916824788B1A00259866 /* SearchViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445916224788B1A00259866 /* SearchViewControllerProtocols.swift */; };
+		F445916924788B1A00259866 /* SearchViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445916324788B1A00259866 /* SearchViewControllerInteractor.swift */; };
+		F44591732479290100259866 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445916D2479290100259866 /* PageViewController.swift */; };
+		F445918024792A1400259866 /* StoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445917A24792A1400259866 /* StoriesPresenter.swift */; };
+		F445918124792A1400259866 /* StoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445917B24792A1400259866 /* StoriesRouter.swift */; };
+		F445918224792A1400259866 /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445917C24792A1400259866 /* StoriesViewController.swift */; };
+		F445918324792A1400259866 /* StoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445917D24792A1400259866 /* StoriesProtocols.swift */; };
+		F445918424792A1400259866 /* StoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445917E24792A1400259866 /* StoriesInteractor.swift */; };
+		F445918C24792A1E00259866 /* VideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445918624792A1E00259866 /* VideoPresenter.swift */; };
+		F445918D24792A1E00259866 /* VideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445918724792A1E00259866 /* VideoRouter.swift */; };
+		F445918E24792A1E00259866 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445918824792A1E00259866 /* VideoViewController.swift */; };
+		F445918F24792A1E00259866 /* VideoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445918924792A1E00259866 /* VideoProtocols.swift */; };
+		F445919024792A1E00259866 /* VideoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445918A24792A1E00259866 /* VideoInteractor.swift */; };
+		F445919824792A2E00259866 /* FavouritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445919224792A2E00259866 /* FavouritesPresenter.swift */; };
+		F445919924792A2E00259866 /* FavouritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445919324792A2E00259866 /* FavouritesRouter.swift */; };
+		F445919A24792A2E00259866 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445919424792A2E00259866 /* FavouritesViewController.swift */; };
+		F445919B24792A2E00259866 /* FavouritesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445919524792A2E00259866 /* FavouritesProtocols.swift */; };
+		F445919C24792A2E00259866 /* FavouritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445919624792A2E00259866 /* FavouritesInteractor.swift */; };
+		F445919F24793A3700259866 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445919E24793A3700259866 /* Errors.swift */; };
+		F44591A124793A6D00259866 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591A024793A6D00259866 /* Api.swift */; };
+		F44591A324793B8200259866 /* ApiManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591A224793B8200259866 /* ApiManger.swift */; };
+		F44591A524793B9E00259866 /* CorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591A424793B9E00259866 /* CorePresenter.swift */; };
+		F44591AA24793CFC00259866 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591A924793CFC00259866 /* Models.swift */; };
+		F44591AC2479C65600259866 /* GetVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591AB2479C65600259866 /* GetVideosResponse.swift */; };
+		F44591B02479CC4400259866 /* TopRatedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591AE2479CC4400259866 /* TopRatedCollectionViewCell.swift */; };
+		F44591B12479CC4400259866 /* TopRatedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44591AF2479CC4400259866 /* TopRatedCollectionViewCell.xib */; };
+		F44591B4247A58DE00259866 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591B2247A58DE00259866 /* FirstTableViewCell.swift */; };
+		F44591B5247A58DE00259866 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44591B3247A58DE00259866 /* FirstTableViewCell.xib */; };
+		F44591B9247A82E500259866 /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44591B7247A82E500259866 /* PopularTableViewCell.swift */; };
+		F44591BA247A82E500259866 /* PopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44591B8247A82E500259866 /* PopularTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1D444664828574AB13BD622 /* Pods-lampa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lampa.release.xcconfig"; path = "Target Support Files/Pods-lampa/Pods-lampa.release.xcconfig"; sourceTree = "<group>"; };
+		D25DDF3902B935D96652BF35 /* Pods-lampa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lampa.debug.xcconfig"; path = "Target Support Files/Pods-lampa/Pods-lampa.debug.xcconfig"; sourceTree = "<group>"; };
+		D6050F9C31FA52441C0AD58A /* Pods_lampa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lampa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445913124786F7D00259866 /* lampa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lampa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445913424786F7D00259866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445913624786F7D00259866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F445913824786F7D00259866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F445913B24786F7D00259866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F445913D24786F7F00259866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F445914024786F7F00259866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F445914224786F7F00259866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F445914F24787EEB00259866 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		F445915F24788B1A00259866 /* SearchViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerPresenter.swift; sourceTree = "<group>"; };
+		F445916024788B1A00259866 /* SearchViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerRouter.swift; sourceTree = "<group>"; };
+		F445916124788B1A00259866 /* SearchViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerViewController.swift; sourceTree = "<group>"; };
+		F445916224788B1A00259866 /* SearchViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerProtocols.swift; sourceTree = "<group>"; };
+		F445916324788B1A00259866 /* SearchViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInteractor.swift; sourceTree = "<group>"; };
+		F445916D2479290100259866 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F445917A24792A1400259866 /* StoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPresenter.swift; sourceTree = "<group>"; };
+		F445917B24792A1400259866 /* StoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesRouter.swift; sourceTree = "<group>"; };
+		F445917C24792A1400259866 /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
+		F445917D24792A1400259866 /* StoriesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesProtocols.swift; sourceTree = "<group>"; };
+		F445917E24792A1400259866 /* StoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesInteractor.swift; sourceTree = "<group>"; };
+		F445918624792A1E00259866 /* VideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPresenter.swift; sourceTree = "<group>"; };
+		F445918724792A1E00259866 /* VideoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRouter.swift; sourceTree = "<group>"; };
+		F445918824792A1E00259866 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		F445918924792A1E00259866 /* VideoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProtocols.swift; sourceTree = "<group>"; };
+		F445918A24792A1E00259866 /* VideoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInteractor.swift; sourceTree = "<group>"; };
+		F445919224792A2E00259866 /* FavouritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesPresenter.swift; sourceTree = "<group>"; };
+		F445919324792A2E00259866 /* FavouritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesRouter.swift; sourceTree = "<group>"; };
+		F445919424792A2E00259866 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		F445919524792A2E00259866 /* FavouritesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesProtocols.swift; sourceTree = "<group>"; };
+		F445919624792A2E00259866 /* FavouritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesInteractor.swift; sourceTree = "<group>"; };
+		F445919E24793A3700259866 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		F44591A024793A6D00259866 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		F44591A224793B8200259866 /* ApiManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManger.swift; sourceTree = "<group>"; };
+		F44591A424793B9E00259866 /* CorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePresenter.swift; sourceTree = "<group>"; };
+		F44591A924793CFC00259866 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F44591AB2479C65600259866 /* GetVideosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVideosResponse.swift; sourceTree = "<group>"; };
+		F44591AE2479CC4400259866 /* TopRatedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedCollectionViewCell.swift; sourceTree = "<group>"; };
+		F44591AF2479CC4400259866 /* TopRatedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopRatedCollectionViewCell.xib; sourceTree = "<group>"; };
+		F44591B2247A58DE00259866 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		F44591B3247A58DE00259866 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		F44591B7247A82E500259866 /* PopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
+		F44591B8247A82E500259866 /* PopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +99,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B10F670555632C219D290CA /* Pods_lampa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FBFF3F455184A3EADD09855 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6050F9C31FA52441C0AD58A /* Pods_lampa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F765AFB5384D7E0F346092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D25DDF3902B935D96652BF35 /* Pods-lampa.debug.xcconfig */,
+				B1D444664828574AB13BD622 /* Pods-lampa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F445912824786F7D00259866 = {
 			isa = PBXGroup;
 			children = (
 				F445913324786F7D00259866 /* lampa */,
 				F445913224786F7D00259866 /* Products */,
+				D4F765AFB5384D7E0F346092 /* Pods */,
+				0FBFF3F455184A3EADD09855 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +144,143 @@
 		F445913324786F7D00259866 /* lampa */ = {
 			isa = PBXGroup;
 			children = (
+				F44591482478700000259866 /* Network */,
+				F44591492478706900259866 /* Extensions */,
+				F445914B247870EC00259866 /* Core */,
+				F445914C2478710D00259866 /* UI & Modules */,
 				F445913424786F7D00259866 /* AppDelegate.swift */,
 				F445913624786F7D00259866 /* SceneDelegate.swift */,
-				F445913824786F7D00259866 /* ViewController.swift */,
-				F445913A24786F7D00259866 /* Main.storyboard */,
 				F445913D24786F7F00259866 /* Assets.xcassets */,
-				F445913F24786F7F00259866 /* LaunchScreen.storyboard */,
 				F445914224786F7F00259866 /* Info.plist */,
 			);
 			path = lampa;
+			sourceTree = "<group>";
+		};
+		F44591482478700000259866 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F445919E24793A3700259866 /* Errors.swift */,
+				F44591A024793A6D00259866 /* Api.swift */,
+				F44591A224793B8200259866 /* ApiManger.swift */,
+				F44591A924793CFC00259866 /* Models.swift */,
+				F44591AB2479C65600259866 /* GetVideosResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F44591492478706900259866 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F445914F24787EEB00259866 /* ExtensionUIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F445914B247870EC00259866 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F44591A424793B9E00259866 /* CorePresenter.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F445914C2478710D00259866 /* UI & Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F445914D2478711900259866 /* Storyboards */,
+				F445914E2478712F00259866 /* Modules */,
+			);
+			path = "UI & Modules";
+			sourceTree = "<group>";
+		};
+		F445914D2478711900259866 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F445913A24786F7D00259866 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F445914E2478712F00259866 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F44591B6247A82B500259866 /* MainSlider */,
+				F445917924792A0500259866 /* FavouritesController */,
+				F4459178247929FC00259866 /* VideoController */,
+				F4459177247929F400259866 /* StoriesController */,
+				F445915E24788B0100259866 /* SearchController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F445915E24788B0100259866 /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				F445915F24788B1A00259866 /* SearchViewControllerPresenter.swift */,
+				F445916024788B1A00259866 /* SearchViewControllerRouter.swift */,
+				F445916124788B1A00259866 /* SearchViewControllerViewController.swift */,
+				F445916224788B1A00259866 /* SearchViewControllerProtocols.swift */,
+				F445916324788B1A00259866 /* SearchViewControllerInteractor.swift */,
+			);
+			path = SearchController;
+			sourceTree = "<group>";
+		};
+		F4459177247929F400259866 /* StoriesController */ = {
+			isa = PBXGroup;
+			children = (
+				F44591AD2479CC0E00259866 /* Cells */,
+				F445917A24792A1400259866 /* StoriesPresenter.swift */,
+				F445917B24792A1400259866 /* StoriesRouter.swift */,
+				F445917C24792A1400259866 /* StoriesViewController.swift */,
+				F445917D24792A1400259866 /* StoriesProtocols.swift */,
+				F445917E24792A1400259866 /* StoriesInteractor.swift */,
+			);
+			path = StoriesController;
+			sourceTree = "<group>";
+		};
+		F4459178247929FC00259866 /* VideoController */ = {
+			isa = PBXGroup;
+			children = (
+				F445918624792A1E00259866 /* VideoPresenter.swift */,
+				F445918724792A1E00259866 /* VideoRouter.swift */,
+				F445918824792A1E00259866 /* VideoViewController.swift */,
+				F445918924792A1E00259866 /* VideoProtocols.swift */,
+				F445918A24792A1E00259866 /* VideoInteractor.swift */,
+			);
+			path = VideoController;
+			sourceTree = "<group>";
+		};
+		F445917924792A0500259866 /* FavouritesController */ = {
+			isa = PBXGroup;
+			children = (
+				F445919224792A2E00259866 /* FavouritesPresenter.swift */,
+				F445919324792A2E00259866 /* FavouritesRouter.swift */,
+				F445919424792A2E00259866 /* FavouritesViewController.swift */,
+				F445919524792A2E00259866 /* FavouritesProtocols.swift */,
+				F445919624792A2E00259866 /* FavouritesInteractor.swift */,
+			);
+			path = FavouritesController;
+			sourceTree = "<group>";
+		};
+		F44591AD2479CC0E00259866 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F44591AE2479CC4400259866 /* TopRatedCollectionViewCell.swift */,
+				F44591AF2479CC4400259866 /* TopRatedCollectionViewCell.xib */,
+				F44591B2247A58DE00259866 /* FirstTableViewCell.swift */,
+				F44591B3247A58DE00259866 /* FirstTableViewCell.xib */,
+				F44591B7247A82E500259866 /* PopularTableViewCell.swift */,
+				F44591B8247A82E500259866 /* PopularTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F44591B6247A82B500259866 /* MainSlider */ = {
+			isa = PBXGroup;
+			children = (
+				F445916D2479290100259866 /* PageViewController.swift */,
+			);
+			path = MainSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F445914524786F7F00259866 /* Build configuration list for PBXNativeTarget "lampa" */;
 			buildPhases = (
+				67C973910A641E3EAC1E6CE4 /* [CP] Check Pods Manifest.lock */,
 				F445912D24786F7D00259866 /* Sources */,
 				F445912E24786F7D00259866 /* Frameworks */,
 				F445912F24786F7D00259866 /* Resources */,
+				15DF033623B1433EBE907D25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +343,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F445914124786F7F00259866 /* LaunchScreen.storyboard in Resources */,
 				F445913E24786F7F00259866 /* Assets.xcassets in Resources */,
+				F44591B12479CC4400259866 /* TopRatedCollectionViewCell.xib in Resources */,
+				F44591B5247A58DE00259866 /* FirstTableViewCell.xib in Resources */,
 				F445913C24786F7D00259866 /* Main.storyboard in Resources */,
+				F44591BA247A82E500259866 /* PopularTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15DF033623B1433EBE907D25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lampa/Pods-lampa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lampa/Pods-lampa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lampa/Pods-lampa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C973910A641E3EAC1E6CE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lampa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F445912D24786F7D00259866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F445913924786F7D00259866 /* ViewController.swift in Sources */,
+				F445918124792A1400259866 /* StoriesRouter.swift in Sources */,
+				F44591AA24793CFC00259866 /* Models.swift in Sources */,
+				F445919B24792A2E00259866 /* FavouritesProtocols.swift in Sources */,
+				F445916824788B1A00259866 /* SearchViewControllerProtocols.swift in Sources */,
+				F445915024787EEB00259866 /* ExtensionUIViewController.swift in Sources */,
 				F445913524786F7D00259866 /* AppDelegate.swift in Sources */,
+				F445919A24792A2E00259866 /* FavouritesViewController.swift in Sources */,
+				F445918C24792A1E00259866 /* VideoPresenter.swift in Sources */,
+				F445919C24792A2E00259866 /* FavouritesInteractor.swift in Sources */,
+				F445918024792A1400259866 /* StoriesPresenter.swift in Sources */,
+				F44591A124793A6D00259866 /* Api.swift in Sources */,
+				F44591A524793B9E00259866 /* CorePresenter.swift in Sources */,
+				F445916724788B1A00259866 /* SearchViewControllerViewController.swift in Sources */,
+				F44591B9247A82E500259866 /* PopularTableViewCell.swift in Sources */,
+				F445916624788B1A00259866 /* SearchViewControllerRouter.swift in Sources */,
+				F445916524788B1A00259866 /* SearchViewControllerPresenter.swift in Sources */,
+				F445916924788B1A00259866 /* SearchViewControllerInteractor.swift in Sources */,
+				F44591B02479CC4400259866 /* TopRatedCollectionViewCell.swift in Sources */,
+				F44591AC2479C65600259866 /* GetVideosResponse.swift in Sources */,
+				F445919F24793A3700259866 /* Errors.swift in Sources */,
+				F445918324792A1400259866 /* StoriesProtocols.swift in Sources */,
+				F445918D24792A1E00259866 /* VideoRouter.swift in Sources */,
+				F445919024792A1E00259866 /* VideoInteractor.swift in Sources */,
+				F445918F24792A1E00259866 /* VideoProtocols.swift in Sources */,
+				F445918E24792A1E00259866 /* VideoViewController.swift in Sources */,
+				F445918424792A1400259866 /* StoriesInteractor.swift in Sources */,
+				F445918224792A1400259866 /* StoriesViewController.swift in Sources */,
 				F445913724786F7D00259866 /* SceneDelegate.swift in Sources */,
+				F445919824792A2E00259866 /* FavouritesPresenter.swift in Sources */,
+				F44591B4247A58DE00259866 /* FirstTableViewCell.swift in Sources */,
+				F445919924792A2E00259866 /* FavouritesRouter.swift in Sources */,
+				F44591A324793B8200259866 /* ApiManger.swift in Sources */,
+				F44591732479290100259866 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,14 +445,6 @@
 				F445913B24786F7D00259866 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F445913F24786F7F00259866 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F445914024786F7F00259866 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +566,7 @@
 		};
 		F445914624786F7F00259866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25DDF3902B935D96652BF35 /* Pods-lampa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,12 +578,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.lampa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F445914724786F7F00259866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D444664828574AB13BD622 /* Pods-lampa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.lampa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
